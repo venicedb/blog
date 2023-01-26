@@ -2,7 +2,7 @@
 title: Hello World
 subtitle: Ciao Mondo
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1674755824751/TH9mgGLAO.webp?auto=compress
-tags: database, big-data, ai
+tags: database, big-data, ai, ML
 domain: blog.venicedb.org
 publishAs: felixgv 
 ---
