@@ -1,3 +1,11 @@
+---
+ title: Public CI
+ cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1674831252879/5Igyt1j_j.jpeg?auto=compress
+ tags: database, ci, github-actions
+ domain: blog.venicedb.org
+ publishAs: felixgv 
+ ---
+
 For the past few years, the Venice team at LinkedIn has been maintaining a Jenkins cluster to run builds. This has worked well and it helps improve the team’s productivity, but now that the project is open source, it is preferable to have a publicly accessible CI solution. For this, we have chosen GitHub Actions. This is a quick overview of what we have done so far in this space, and what we're hoping to do later.
 
 After [Sushant](https://www.linkedin.com/in/sushantmane/) initially [configured the actions](https://github.com/linkedin/venice/pull/115) at the end of 2022, the build took over 4 hours of machine time, split across 4 tasks, the longest of which took over 2 hours. This was a degradation compared to the internal CI which could run the whole suite on a single machine in about 1 hour, so the first order of business was to speed up the build.
@@ -14,7 +22,6 @@ All of this helps us move in the direction of opening up our developmental proce
     
 2. Some reports on which tests are most flaky, which we use to drive continuous improvements in test quality.
     
-
 Besides the test suite, we also have a release certification environment that we use to run other kinds of tests, including performance, longevity and compatibility tests. This is not open source yet as it is tied to certain internal pieces of infrastructure, but we might be able to make a version of it public eventually.
 
 Please let us know if you have any feedback or suggestions, or if you'd like to contribute in any way, whether to the CI or to Venice itself.
