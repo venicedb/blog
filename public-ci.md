@@ -4,7 +4,7 @@
  tags: database, ci, github-actions
  domain: blog.venicedb.org
  publishAs: felixgv 
- ---
+---
 
 For the past few years, the Venice team at LinkedIn has been maintaining a Jenkins cluster to run builds. This has worked well and it helps improve the team’s productivity, but now that the project is open source, it is preferable to have a publicly accessible CI solution. For this, we have chosen GitHub Actions. This is a quick overview of what we have done so far in this space, and what we're hoping to do later.
 
