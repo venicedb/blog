@@ -14,7 +14,7 @@ Historically, we had not been very diligent about what tests went where, so we h
 
 In the end, due to limitations in [GitHub's implementation of YAML](https://github.com/actions/runner/issues/1182), we ended up [dynamically generating the GitHub Actions](https://github.com/linkedin/venice/pull/161) as part of our Gradle build. There is undoubtedly a better and cleaner way to do this, but for the time being, this works, and it lowers the CI's wall clock time to about half an hour; faster than the internal CI!
 
-[Adam](https://www.linkedin.com/in/xinchen8/) then added static analysis so that violations of [Spotbugs rules](https://github.com/linkedin/venice/pull/170) as well as degradations in [code coverage](https://github.com/linkedin/venice/pull/168) cause the build to fail and merging to be blocked.
+[Adam](https://www.linkedin.com/in/xinchen8/) then added static analysis so that violations of [Spotbugs rules](https://github.com/linkedin/venice/pull/170) as well as degradations in [code coverage](https://venicedb.org/docs/dev_guide/code_coverage_guide) cause the build to fail and merging to be blocked.
 
 All of this helps us move in the direction of opening up our developmental processes to the community, but for the time being, we will keep running the internal CI as well, as it provides us with a few things which the public one doesn't (yet), including:
 
